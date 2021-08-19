@@ -1,0 +1,57 @@
+$prefixPageHome: scopic-pagehome;
+
+.#{$prefixPageHome} {
+  &-score-title {
+    text-align: center;
+  }
+
+  &-score-content-container {
+    width: 100%;
+  }
+
+  &-score-content {
+    max-width: 80px;
+    margin: auto;
+  }
+
+  &-gameplay-card-container {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    &.enemy-card {
+      background-color: #ffffff;
+    }
+  }
+
+  &-gameplay-card-img {
+    width: 200px;
+    height: auto;
+  }
+
+  &-button-container {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0px 16px;
+  }
+
+  &-button-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+  .#{$prefixPageHome} {
+    &-button-container {
+      width: auto;
+    }
+
+    &-button-content {
+      width: 300px;
+    }
+  }
+}

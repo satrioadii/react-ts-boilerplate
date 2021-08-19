@@ -1,0 +1,7 @@
+$prefixLayoutGeneral: scopicui-layout-general;
+
+.#{$prefixLayoutGeneral} {
+  &-container {
+    background-color: #00000000;
+  }
+}

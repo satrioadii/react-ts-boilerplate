@@ -1,0 +1,35 @@
+$prefixBaseMargin: scopicui-m;
+
+@each $key, $value in $spacers {
+  .#{$prefixBaseMargin} {
+    &-#{$key} {
+      margin: $value;
+    }
+
+    &x-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+
+    &y-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+
+    &t-#{$key} {
+      margin-top: $value;
+    }
+
+    &b-#{$key} {
+      margin-bottom: $value;
+    }
+
+    &r-#{$key} {
+      margin-right: $value;
+    }
+
+    &l-#{$key} {
+      margin-left: $value;
+    }
+  }
+}

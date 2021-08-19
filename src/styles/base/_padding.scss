@@ -1,0 +1,35 @@
+$prefixBasePadding: scopicui-p;
+
+@each $key, $value in $spacers {
+  .#{$prefixBasePadding} {
+    &-#{$key} {
+      padding: $value;
+    }
+
+    &x-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+
+    &y-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+
+    &t-#{$key} {
+      padding-top: $value;
+    }
+
+    &b-#{$key} {
+      padding-bottom: $value;
+    }
+
+    &r-#{$key} {
+      padding-right: $value;
+    }
+
+    &l-#{$key} {
+      padding-left: $value;
+    }
+  }
+}
